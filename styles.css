@@ -1,0 +1,128 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    color: #011627;
+}
+
+span[class~='sr-only']{
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    padding: 0;
+    margin: -1px;
+}
+
+h1{
+    margin: 0 auto;
+    max-width: 37.25rem;
+    padding: 1.5rem 1.25rem;
+}
+
+h1 .flex{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+h1 .flex span:first-of-type{
+    font-size: 0.7em;
+}
+
+section{
+    margin: 0 auto;
+    border: 2px solid #011627;
+    max-width: 37rem;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    position: sticky;
+    color: #cbd0d4;
+    background-color: #011627;
+    margin: 0 2px;
+    padding: 0.5rem calc(1.25rem +2px) 0.5rem 0;
+    z-index: 999;
+}
+
+#years span[class]{
+    text-align: right;
+    font-weight: bold;
+    width: 5rem;
+}
+
+span:not[sr-only]{
+    font-weight: normal;
+}
+
+table{
+    border-collapse: collapse;
+    border: 0;
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+table caption{
+    color: #356eaf;
+    font-weight: normal;
+    font-size: 1.3em;
+    position: absolute;
+    top: -2.5rem;
+    left: 0.5rem;
+}
+
+tbody td {
+    width: 100vw;
+    min-width: 5rem;
+    max-width: 5rem;
+  }
+
+
+tbody th{
+    width: calc(100% - 12rem);
+}
+
+tr[class='total']{
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class='total'] th{
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total {
+    text-align: right;
+    padding: 0 0.25rem;
+}
+
+tr.total:hover{
+    background-color: #99c9ff;
+}
+
+tr[class='data']{
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem)
+}
+
+tr.data th{
+    text-align: left;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+tr.data td {
+    vertical-align: top;
+    padding: 0.3rem 0.25rem 0;
+    text-align: right;
+  }
